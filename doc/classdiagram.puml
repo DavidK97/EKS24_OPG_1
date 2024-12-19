@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+!pragma layout smetana
+
+class Main {
++ static void Main (String [] args)
+
+}
+
+class Basket{
+- List <Product> productList
++ addProduct()
++ removeProduct()
++ printAll()
++ calculateTotal()
+}
+
+abstract class Product {
+# String name
+# double price
+}
+
+class Clothes {
+- int size
+- String color
+}
+
+class Electronics {
+- int warrantyNoOfMonths
+}
+
+class Food {
+- String expireDate
+}
+
+Main *-- Basket
+Basket *-- Product
+Product <|-- Clothes
+Product <|-- Electronics
+Product <|-- Food
+
+@enduml
