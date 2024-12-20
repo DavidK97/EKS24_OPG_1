@@ -4,7 +4,11 @@ public class Main {
 
         Basket basket1 = new Basket();
 
-        //Lav eventuelt en metode til at fylde basket?
+        //TODO Lav eventuelt en metode til at fylde basket
+        //TODO Lav eventuelt TextUI og en switch
+        //TODO Sorter eventuelt efter pris også
+
+
         Product clothes1 = new Clothes("T-shirt", 50, 10, "black");
         Product electronics1 = new Electronics("Laptop", 1000, 24);
         Product food1 = new Food("Milk", 1, "24/12/2024");
